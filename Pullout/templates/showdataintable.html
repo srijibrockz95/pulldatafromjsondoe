@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sample job details - Tabular representation </title>
+    <style>
+        table,
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table style="padding-top: 5em; text-align: center;">
+        <tr>
+            <th>Job Name</th>
+            <th>Total Number of Builds</th>
+            <th>Healthreport</th>
+            <th>Last Failed Builds</th>
+            <th>Last Successful Build</th>
+        </tr>
+        <tr>
+            <td>{{ jobname }}</td>
+            <td>{{ noofbuilds }}</td>
+            <td>{{ healthreport }}</td>
+            <td>{{ lastfailedbuilds }}</td>
+            <td>{{ lastsuccessbuilds }}</td>
+        </tr>
+    </table>
+</body>
+</html>
